@@ -1,0 +1,49 @@
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38']
+
+[tool.nbqa.mutate]
+black = 1
+isort = 1
+
+[tool.nbqa.config]
+isort = ".isort.cfg"
+
+[tool.nbqa.addopts]
+flake8 = [
+  "--extend-ignore=E703,E302,E305",
+]
+
+[tool.poetry]
+authors = ["girish pasupathy <girishpasupathy@gmail.com>"]
+description = "Notebooks on various problems using machine learning."
+license = "MIT"
+name = "Machine learning problems"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+numpy = "^1.19.4"
+python = "^3.9"
+jupyter = "^1.0.0"
+matplotlib = "^3.3.3"
+seaborn = "^0.11.0"
+scikit-learn = "^0.23.2"
+pandas = "^1.1.4"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+ipykernel = "^5.3.4"
+isort = "^5.6.4"
+jupyterthemes = "^0.20.0"
+mypy = "^0.790"
+nbqa = "^0.5.0"
+pre-commit = "^2.9.0"
+pydocstyle = "^5.1.1"
+pytest = "^6.1.2"
+pyupgrade = "^2.7.4"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]

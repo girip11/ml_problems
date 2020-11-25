@@ -1,2 +1,3 @@
-# ml_problems
-Exploratory data analysis on datasets, solutions to various machine learning problems
+# Machine learning
+
+Exploratory data analysis on datasets, trying out various machine learning problems on different datasets.
