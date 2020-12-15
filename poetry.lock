@@ -619,7 +619,7 @@ test = ["fastjsonschema", "testpath", "pytest", "pytest-cov"]
 
 [[package]]
 name = "nbqa"
-version = "0.5.0"
+version = "0.5.5"
 description = "Run any standard Python code quality tool on a Jupyter Notebook"
 category = "dev"
 optional = false
@@ -628,6 +628,9 @@ python-versions = ">=3.6.1"
 [package.dependencies]
 ipython = ">=7.8.0"
 toml = "*"
+
+[package.extras]
+toolchain = ["black", "flake8", "isort", "mypy", "pylint", "pyupgrade"]
 
 [[package]]
 name = "nest-asyncio"
@@ -1564,8 +1567,8 @@ nbformat = [
     {file = "nbformat-5.0.8.tar.gz", hash = "sha256:f545b22138865bfbcc6b1ffe89ed5a2b8e2dc5d4fe876f2ca60d8e6f702a30f8"},
 ]
 nbqa = [
-    {file = "nbqa-0.5.0-py2.py3-none-any.whl", hash = "sha256:0685bf4022904387298b40e575e2762dfb3a3db92f23ba3a5080aa79eaa51f83"},
-    {file = "nbqa-0.5.0.tar.gz", hash = "sha256:4ff30880a062ca95d7a9a8b37724288789dd7cf3249b09cc1ac4fa697f5d80e6"},
+    {file = "nbqa-0.5.5-py2.py3-none-any.whl", hash = "sha256:6956d0e8e06e22160ce5a5ab1c605601940d39d750069b94c8ed42595b5b9db5"},
+    {file = "nbqa-0.5.5.tar.gz", hash = "sha256:01da850a04f096ef2c96433a2758ebb07eaf6e9b2c9080a27e1c12cefe7acf12"},
 ]
 nest-asyncio = [
     {file = "nest_asyncio-1.4.3-py3-none-any.whl", hash = "sha256:dbe032f3e9ff7f120e76be22bf6e7958e867aed1743e6894b8a9585fe8495cc9"},
